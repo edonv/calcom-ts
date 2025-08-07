@@ -6,4 +6,4 @@ export { paths } from "./openapi/schema.js";
 //     apiKey?: string,
 // }
 
-export const CalcomClient = createClient<paths>;
+export const CalClient = createClient<paths>;
