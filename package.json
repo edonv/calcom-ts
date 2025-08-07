@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "type": "module",
   "license": "MIT",
-  "description": "",
+  "description": "A TypeScript codegen package for Cal.com's API v2.",
   "repository": "github:edonv/calcom-ts",
   "author": "edonv",
   "sponsor": {
