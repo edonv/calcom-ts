@@ -1,0 +1,33 @@
+{
+  "name": "cal-com-ts",
+  "version": "0.0.0",
+  "type": "module",
+  "license": "MIT",
+  "description": "",
+  "repository": "github:edonv/cal-com-ts",
+  "author": "edonv",
+  "sponsor": {
+    "url": "https://github.com/sponsors/edonv"
+  },
+  "scripts": {
+    "build": "tsc --build tsconfig.build.json",
+    "test": "tsc && node dist/test/calcom.test.js",
+    "api-gen": "openapi-typescript",
+    "gen-build": "npm run api-gen && npm run build",
+    "publish": "rm -r ./dist ; npm run gen-build && npm publish"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/README.md",
+    "/LICENSE.md",
+    "/dist/"
+  ],
+  "dependencies": {
+    "openapi-fetch": "^0.14.0"
+  },
+  "devDependencies": {
+    "openapi-typescript": "^7.8.0",
+    "typescript": "^5.9.2"
+  }
+}

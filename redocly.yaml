@@ -1,0 +1,5 @@
+apis:
+  primary:
+    root: ./openapi/openapi.json
+    x-openapi-ts:
+      output: ./src/openapi/schema.ts
